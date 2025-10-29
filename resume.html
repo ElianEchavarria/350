@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Elian Echavarria</title>
+
+    <style>
+        body {
+            background: rgb(186, 186, 186);
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        .navbar {
+            background-color: #233b6c;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a[aria-current="page"] {
+            color: rgb(186, 186, 186);
+            font-size: 1.2rem;
+        }
+
+        .content {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #233b6c;
+            margin-top: 1rem;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            max-width: 720px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 700px) {
+            .image-container img {
+                max-width: 92%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html" aria-current="page">Resume</a></li>
+            <li><a href="myUniversity.html">University</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Resume</h1>
+
+        <div class="image-container">
+            <img src="ElianEchavarria_Resume_1.jpg" alt="resume">
+        </div>
+    </div>
+</body>
+</html>
